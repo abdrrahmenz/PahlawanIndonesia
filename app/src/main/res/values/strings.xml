@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pahlawan Indonesia</string>
+    <string name="lahir">Lahir</string>
+    <string name="field_lahir">21 Desember 2019, Solo</string>
+    <string name="wafat">Wafat</string>
+    <string name="field_wafat">21 Desember 2030, Jakarta</string>
+    <string name="content_text">R.A Kartini adalah seorang tokoh Jawa dan Pahlawan Nasional Indonesia. Kartini dikenal sebagai pelopor kebangkitan perempuan pribumi.</string>
+    <string name="txt_name">R.A Kartini</string>
+    <string name="txt_jabatan">Tokoh Hak Asasi Perempuan Indonesia</string>
+    <string name="title_detail_activity">Detail Pahlawan</string>
+    <string name="item_row_detail">Detail</string>
+    <string name="item_row_share">Share</string>
+    <string name="item_row_name">Name</string>
+    <string name="item_row_jabatan">Jabatan</string>
+    <string name="item_row_img">Image Title</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="dev.abman.pahlawanindonesia.DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/img_item_photo"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/TextContentTitle"
+            android:textStyle="bold"
+            android:text="@string/txt_name"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_item_remarks"
+            style="@style/TextContentTitle"
+            android:text="@string/txt_jabatan"
+            android:layout_below="@id/tv_item_name"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/img_item_photo"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_item_keterangan"
+        style="@style/TextContent"
+        android:text="@string/content_text"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:lineSpacingMultiplier="1"
+        android:layout_below="@id/line"
+        android:textColor="@android:color/black"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_keterangan"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextSpec.Field"
+            android:text="@string/lahir"/>
+        <TextView
+            android:id="@+id/tv_item_lahir"
+            style="@style/TextSpec.Value"
+            android:text="@string/field_lahir"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextSpec.Field"
+            android:text="@string/wafat"/>
+        <TextView
+            android:id="@+id/tv_item_wafat"
+            style="@style/TextSpec.Value"
+            android:text="@string/field_wafat"/>
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>
